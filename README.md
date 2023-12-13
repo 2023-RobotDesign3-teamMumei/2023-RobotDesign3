@@ -16,6 +16,13 @@ cd ~/catkin_ws/src
 git clone https://github.com/rt-net/crane_x7_ros.git
 ```
 
+* OpenCVのインストール
+```
+$ wget --no-check-certificate https://raw.githubusercontent.com/milq/milq/master/scripts/bash/install-opencv.sh
+$ chmod +x install-opencv.sh
+$ ./install-opencv.sh
+```
+
 ## 動作確認済み環境
   * OS: Ubuntu 20.04LTS
   * ROS: Noetic
