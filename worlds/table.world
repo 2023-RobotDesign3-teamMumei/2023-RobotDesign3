@@ -20,7 +20,7 @@
 
     <model name="cube30_1">
       <include>
-        <uri>model://wood_cube_5cm</uri>
+        <uri>model://cube30</uri>
       </include>
 
       <pose>0.40 0.10 1.0 0 0 0</pose>
@@ -28,7 +28,7 @@
 
     <model name="cube30_2">
       <include>
-        <uri>model://wood_cube_5cm</uri>
+        <uri>model://cube30</uri>
       </include>
 
       <pose>0.40 0 1.0 0 0 0</pose>
@@ -36,7 +36,7 @@
 
     <model name="cube30_3">
       <include>
-        <uri>model://wood_cube_5cm</uri>
+        <uri>model://cube30</uri>
       </include>
 
       <pose>0.40 -0.10 1.0 0 0 0</pose>
@@ -44,7 +44,7 @@
 
     <model name="cube30_4">
       <include>
-        <uri>model://wood_cube_5cm</uri>
+        <uri>model://cube30</uri>
       </include>
 
       <pose>0.30 0.10 1.0 0 0 0</pose>
@@ -52,7 +52,7 @@
 
     <model name="cube30_5">
       <include>
-        <uri>model://wood_cube_5cm</uri>
+        <uri>model://cube30</uri>
       </include>
 
       <pose>0.30 0 1.0 0 0 0</pose>
@@ -60,7 +60,7 @@
 	    
     <model name="cube30_6">
       <include>
-        <uri>model://wood_cube_5cm</uri>
+        <uri>model://cube30</uri>
       </include>
 
       <pose>0.30 -0.10 1.0 0 0 0</pose>
@@ -68,7 +68,7 @@
 
     <model name="cube30_7">
       <include>
-        <uri>model://wood_cube_5cm</uri>
+        <uri>model://cube30</uri>
       </include>
 
       <pose>0.20 0.10 1.0 0 0 0</pose>
@@ -76,7 +76,7 @@
 
     <model name="cube30_8">
       <include>
-        <uri>model://wood_cube_5cm</uri>
+        <uri>model://cube30</uri>
       </include>
 
       <pose>0.20 0 1.0 0 0 0</pose>
@@ -84,7 +84,7 @@
 
     <model name="cube30_9">
       <include>
-        <uri>model://wood_cube_5cm</uri>
+        <uri>model://cube30</uri>
       </include>
 
       <pose>0.20 -0.10 1.0 0 0 0</pose>
