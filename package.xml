@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <package format="2">
-  <name>2023-RobotDesign3-teamMumei</name>
+  <name>2023-RobotDesign3</name>
   <version>0.0.0</version>
   <description>The 2023-RobotDesign3-teamMumei package</description>
 
@@ -19,6 +19,12 @@
   <build_depend>rospy</build_depend>
   <build_export_depend>rospy</build_export_depend>
   <exec_depend>rospy</exec_depend>
+  <depend>gazebo_ros</depend>
+  <exec_depend>gazebo</exec_depend>
 
 
+ <export>
+    <gazebo_ros gazebo_media_path="${prefix}"/>
+    <gazebo_ros gazebo_model_path="${prefix}/model"/>
+  </export>
 </package>
