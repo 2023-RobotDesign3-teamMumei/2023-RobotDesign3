@@ -25,6 +25,19 @@ from gazebo_msgs.msg import ModelStates
 from control_msgs.msg import GripperCommandAction, GripperCommandGoal
 from tf.transformations import quaternion_from_euler, euler_from_quaternion
 
+
+from parameters import (
+    GRIPPER_OPEN,
+    GRIPPER_CLOSE,
+    APPROACH_Z,
+    LEAVE_Z,
+    PICK_Z,
+    PLACE_POSITIONS,
+    BASE_POSITION
+)
+
+
+
 gazebo_model_states = ModelStates()
 
 def callback(msg):
@@ -44,33 +57,7 @@ def yaw_of(object_orientation):
 def main():
     global gazebo_model_states
 
-    #OBJECT_NAME = ["cube30_1","cube30_2","cube30_3","cube30_4","cube30_5","cube30_6","cube30_7","cube30_8","cube30_9","cube30_1","cube30_2","cube30_3","cube30_4","cube30_5","cube30_6","cube30_7","cube30_8","cube30_9"]
-    GRIPPER_OPEN = 0.30              # 掴む時のハンド開閉角度
-    GRIPPER_CLOSE = 0.17            # 設置時のハンド開閉角度
-    APPROACH_Z = 0.15               # 接近時のハンドの高さ
-    LEAVE_Z = 0.22                  # 離れる時のハンドの高さ
-    PICK_Z = 0.12                   # 掴む時のハンドの高さ
-    PLACE_POSITIONS = [             # オブジェクトの設置位置
-            Point(0.3, -0.2, 0.0),
-            Point(0.0, 0.3, 0.0),
-            Point(0.0, -0.3, 0.0),
-            Point(0.2, 0.2, 0.0),
-            Point(0.2, -0.3, 0.0),
-            Point(0.1, -0.4, 0.0),
-            Point(0.4, 0.2, 0.0),
-            Point(0.3, 0.3, 0.0),
-            Point(0.3, -0.3, 0.0),
-            Point(0.42, -0.07, 0.0), # 7mm間隔にする
-            Point(0.42, 0.0, 0.0),
-            Point(0.42, 0.07, 0.0),
-            Point(0.35, -0.07, 0.0),
-            Point(0.35, 0.0, 0.0),
-            Point(0.35, 0.07, 0.0),
-            Point(0.28, -0.07, 0.0),
-            Point(0.28, 0.0, 0.0),
-            Point(0.28, 0.07, 0.0)]
     
-    BASE_POSITION = Point(0.2, 0.0, 0.0)
     i = 0
     flag = True
 
@@ -170,7 +157,7 @@ def main():
         rospy.sleep(1.0)
         
         # 設置位置に移動する
-        place_position = PLACE_POSITIONS[i + 9] # 設置位置をランダムに選択する
+        place_position = PLACE_POSITIONS[i + 16] # 設置位置をランダムに選択する
         target_pose.position.x = place_position.x
         target_pose.position.y = place_position.y
         q = quaternion_from_euler(-math.pi, 0.0, -math.pi/2.0)
@@ -214,7 +201,7 @@ def main():
         if flag == True:
             i += 1
         print(i)
-        if i > 8:
+        if i > 15:
             print("Finish")
             break
 
