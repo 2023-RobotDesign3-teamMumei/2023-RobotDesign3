@@ -45,11 +45,11 @@ def main():
     global gazebo_model_states
 
     OBJECT_NAME = ["cube30_1","cube30_2","cube30_3","cube30_4","cube30_5","cube30_6","cube30_7","cube30_8","cube30_9","cube30_1","cube30_2","cube30_3","cube30_4","cube30_5","cube30_6","cube30_7","cube30_8","cube30_9"]
-    GRIPPER_OPEN = 0.5              # 掴む時のハンド開閉角度
-    GRIPPER_CLOSE = 0.40            # 設置時のハンド開閉角度
-    APPROACH_Z = 0.20               # 接近時のハンドの高さ
-    LEAVE_Z = 0.22                  # 離れる時のハンドの高さ
-    PICK_Z = 0.12                   # 掴む時のハンドの高さ
+    GRIPPER_OPEN = 0.5
+    GRIPPER_CLOSE = 0.23
+    APPROACH_Z = 0.12
+    LEAVE_Z = 0.20
+    PICK_Z = 0.1
     PLACE_POSITIONS = [             # オブジェクトの設置位置
             Point(0.3, -0.2, 0.0),
             Point(0.0, 0.3, 0.0),
