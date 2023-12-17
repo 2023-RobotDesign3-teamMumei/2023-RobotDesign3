@@ -95,13 +95,7 @@ def main():
         #if i < 18:
             #cube = OBJECT_NAME[i]
 
-        # オブジェクトがgazebo上に存在すれば、pick_and_placeを実行する
-        
-        #object_index = gazebo_model_states.name.index(cube)
-        # オブジェクトの姿勢を取得
-        #object_position = gazebo_model_states.pose[object_index].position
-        #object_orientation = gazebo_model_states.pose[object_index].orientation
-        #object_yaw = yaw_of(object_orientation)
+ 
         # オブジェクトに接近する
         target_pose = Pose()
         place_position = PLACE_POSITIONS[i]
