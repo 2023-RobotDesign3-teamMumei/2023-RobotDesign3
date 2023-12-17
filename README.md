@@ -5,52 +5,14 @@
 ## 動作確認済み環境
   * OS: Ubuntu 20.04LTS
   * ROS: Noetic
-  * Intel RealSense SDK 2.0
-  * OpenCV 4.5.1
+  * Rviz 1.14.20
+  * GAZEBO 11.11.0
 
 ## セットアップ方法
 
-* ROSのインストール
+* ROSパッケージをインストールし、ワークスペースを作成します
 
-```
-$ git clone https://github.com/ryuichiueda/ros_setup_scripts_Ubuntu20.04_desktop.git
-$ cd ros_setup_scripts_Ubuntu18.04_desktop/
-$ sudo apt update
-$ sudo apt upgrade
-$ ./locale.ja.bash
-$ ./step0.bash
-$ ./step1.bash
-```
-
-* ROSの動作確認
-
-```
-$ source ~/.bashrc
-$ roscore
-```
-
-* ワークスペースの作成
-
-```
-$ cd
-$ mkdir -p catkin_ws/src
-$ cd catkin_ws/src
-$ catkin_init_workspace
-$ cd ..
-$ catkin_make
-$ vi ~/.bashrc  #~/.bashrcの編集
-・・・
-source /opt/ros/melodic/setup.bash        #追加
-source ~/catkin_ws/devel/setup.bash       #追加
-export ROS_MASTER_URI=http://localhost:11311
-export ROS_HOSTNAME=localhost
-・・・
-$ source ~/.bashrc
-$ cd ~/catkin_ws/
-$ catkin_make
-```
-
-* 株式会社アールティ様から配布されている [crane_x7_ros](https://github.com/rt-net/crane_x7_ros) パッケージをインストール
+* 株式会社アールティ様から配布されている [crane_x7_ros](https://github.com/rt-net/crane_x7_ros) パッケージを、作成したワークスペースにインストール
 
 ```
 $ cd ~/catkin_ws/src
@@ -61,44 +23,15 @@ $ rosdep install -r -y --from-paths --ignore-src crane_x7_ros
 $ ( cd ~/catkin_ws/ && catkin_make )
 ```
 
-* Rvizの動作確認
-```
-$ source ~/.bashrc
-$ roscore &
-$ rviz
-```
-* GAZEBOの動作確認
-
-~/.ignition/fuel/config.yamlを編集する
-
-```
-$ cd ~/.ignition/fuel/
-$ vi config.yaml
-・・・
-servers:    #この行以下を追加
--
-  name: osrf
-  url: https://api.ignitionrobotics.org
-・・・
-```
-
-GAZEBOを起動
+GAZEBOを起動して動作を確認する
 
 ```
 $ roslaunch crane_x7_gazebo crane_x7_with_table.launch
 ```
 
-* RealSense
-
-* OpenCVのインストール
-```
-$ wget --no-check-certificate https://raw.githubusercontent.com/milq/milq/master/scripts/bash/install-opencv.sh
-$ chmod +x install-opencv.sh
-$ ./install-opencv.sh
-```
 * 本パッケージのインストール
 
-作成したROSワークスペースにクローンしてください
+作成したROSワークスペースに`git clone`でインストールしてください
 
 ```
 $ cd ~/catkin_ws/src
@@ -120,6 +53,8 @@ $ rosurun 2023-RobotDesign3 pick_color_block_in_gazebo.py
 ```
 
 * 実機を使用する場合
+
+以下のようにブロックとストッパーを配置してください
 
 CRANE_X7をPCに接続した状態で、デバイスファイルへの読み書きの実行権限を付与する
 
