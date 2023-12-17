@@ -62,8 +62,9 @@ $ roscore &
 $ rviz
 ```
 * GAZEBOの動作確認
-```
+
 ~/.ignition/fuel/config.yamlを編集する
+```
 $ cd ~/.ignition/fuel/
 $ vi config.yaml
 ・・・
@@ -72,7 +73,9 @@ servers:    #この行以下を追加
   name: osrf
   url: https://api.ignitionrobotics.org
 ・・・
+```
 GAZEBOを起動
+```
 $ roslaunch crane_x7_gazebo crane_x7_with_table.launch
 ```
 
