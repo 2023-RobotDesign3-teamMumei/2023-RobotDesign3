@@ -74,7 +74,7 @@ servers:    #この行以下を追加
   url: https://api.ignitionrobotics.org
 ・・・
 ```
-GAZEBOを起動
+- GAZEBOを起動
 ```
 $ roslaunch crane_x7_gazebo crane_x7_with_table.launch
 ```
@@ -88,7 +88,7 @@ $ chmod +x install-opencv.sh
 $ ./install-opencv.sh
 ```
 * 本パッケージのインストール
-作成したROSワークスペースにクローンしてください
+- 作成したROSワークスペースにクローンしてください
 ```
 $ cd ~/catkin_ws/src
 $ git clone https://github.com/2023-RobotDesign3-teamMumei/2023-RobotDesign3.git
@@ -98,19 +98,19 @@ $ source ~/.bashrc
 
 ## 本パッケージの使用方法
 * シミュレーションを使用する場合
-GAZEBO上でCRANE_X7を用いた、実機の動作確認用のシミュレーション環境を起動します
-このシミュレーションでは、RealSenseを使用することはできません
+- GAZEBO上でCRANE_X7を用いた、実機の動作確認用のシミュレーション環境を起動します
+- このシミュレーションでは、RealSenseを使用することはできません
 ```
 $ roslaunch 2023-RobotDesign3 crane_x7_with_table.launch
 $ rosurun 2023-RobotDesign3 pick_color_block_in_gazebo.py
 ```
 * 実機を使用する場合
-CRANE_X7をPCに接続した状態で、デバイスファイルへの読み書きの実行権限を付与する
+- CRANE_X7をPCに接続した状態で、デバイスファイルへの読み書きの実行権限を付与する
 ```
 $ sudo chmod 666 /dev/ttyUSB0
 ```
-実機の起動
-コマンドを実行すると、アームが動き出すので周囲に注意して起動してください
+- 実機の起動
+- コマンドを実行すると、アームが動き出すので周囲に注意して起動してください
 ```
 $ 
 $ 
