@@ -1,4 +1,9 @@
-# parameters.py
+# SPDX-FileCopyrightText: 2023 Yujiro Shito
+# SPDX-FileCopyrightText: 2023 Shinnosuke Nonaka 
+# SPDX-License-Identifier: Apache-2.0
+
+# パラメータ定義用ファイル
+
 
 from geometry_msgs.msg import Point
 
