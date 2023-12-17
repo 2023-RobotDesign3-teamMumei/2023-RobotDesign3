@@ -131,8 +131,8 @@ $ sudo chmod 666 /dev/ttyUSB0
 コマンドを実行するとアームが動き出すので、周囲に注意して起動してください
 
 ```
-$ 
-$ 
+$ roslaunch crane_x7_bringup demo.launch fake_execution:=false
+$ rosrun 2023-RobotDesign3 pick_color_block.py
 ```
 
 ---
