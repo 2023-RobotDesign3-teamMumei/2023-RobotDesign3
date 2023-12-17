@@ -12,7 +12,7 @@
 
 * ROSパッケージをインストールし、ワークスペースを作成します
 
-* 株式会社アールティ様から配布されている [crane_x7_ros](https://github.com/rt-net/crane_x7_ros) パッケージを、作成したワークスペースにインストール
+* 株式会社アールティ様から配布されている [crane_x7_ros](https://github.com/rt-net/crane_x7_ros) パッケージを、作成したワークスペースにインストールします
 
 ```
 $ cd ~/catkin_ws/src
@@ -23,7 +23,7 @@ $ rosdep install -r -y --from-paths --ignore-src crane_x7_ros
 $ ( cd ~/catkin_ws/ && catkin_make )
 ```
 
-GAZEBOを起動して動作を確認する
+GAZEBOを起動して動作を確認します
 
 ```
 $ roslaunch crane_x7_gazebo crane_x7_with_table.launch
@@ -44,8 +44,6 @@ $ source ~/.bashrc
 * シミュレーションを使用する場合
 
 GAZEBO上でCRANE_X7を用いた、実機の動作確認用のシミュレーション環境を起動します
-
-このシミュレーションでは、RealSenseを使用することはできません
 
 ```
 $ roslaunch 2023-RobotDesign3 crane_x7_with_table.launch
