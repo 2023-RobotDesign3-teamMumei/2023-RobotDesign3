@@ -51,10 +51,15 @@ $ rosurun 2023-RobotDesign3 pick_color_block_in_gazebo.py
 ```
 
 * 実機を使用する場合
+  - 例 ドット文字でAを作る場合
 
 以下のようにブロックとストッパーを配置してください
 
 ![スクリーンショット 2023-12-18 101514](https://github.com/2023-RobotDesign3-teamMumei/2023-RobotDesign3/assets/148028480/2686c0b8-b1b9-4113-ac9d-d8816bf930c7)
+
+完成予想
+![スクリーンショット 2023-12-18 101717](https://github.com/2023-RobotDesign3-teamMumei/2023-RobotDesign3/assets/148028480/e89bc5fd-a16e-42cc-9cf0-b15494b53ed9)
+
 
 CRANE_X7をPCに接続した状態で、デバイスファイルへの読み書きの実行権限を付与する
 
