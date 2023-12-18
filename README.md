@@ -54,7 +54,7 @@ $ rosurun 2023-RobotDesign3 pick_color_block_in_gazebo.py
 
 以下のようにブロックとストッパーを配置してください
 
-![image](C:\Users\81807\Pictures\Screenshots\スクリーンショット 2023-12-18 101514.png)
+![スクリーンショット 2023-12-18 101514](https://github.com/2023-RobotDesign3-teamMumei/2023-RobotDesign3/assets/148028480/2686c0b8-b1b9-4113-ac9d-d8816bf930c7)
 
 CRANE_X7をPCに接続した状態で、デバイスファイルへの読み書きの実行権限を付与する
 
