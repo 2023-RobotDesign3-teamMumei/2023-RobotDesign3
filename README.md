@@ -53,7 +53,7 @@ $ rosurun 2023-RobotDesign3 pick_color_block_in_gazebo.py
 * 実機を使用する場合
   - 例 ドット文字でAを作る場合
 
-以下のようにブロックとストッパーを配置してください
+以下のようにブロックを配置してください
 
 ![スクリーンショット 2023-12-18 170329](https://github.com/2023-RobotDesign3-teamMumei/2023-RobotDesign3/assets/148028480/231d9d2c-fe58-4625-ac40-4aa38309d84e)
 
